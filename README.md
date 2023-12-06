@@ -4,8 +4,9 @@
 
 ## Estrutura do Repositório
 
-- [Trabalho 1](./trabalho-1/): Descrição e arquivos do Trabalho 1.
-- [Engenharia Reversa - 06/12](./engenharia_reversa/): Trabalho para análise de um CSV e criação da engenharia reversa para criação de um modelo Entidade - Relacionamento.
+- [Empresa de Engenharia - 29/11/2023](./trabalho_empresa_engenharia/): Foi solicitado que fosse criado um modelo Entidade - Relacionamento para o documento
+apresentado, referente à criação de um sistema  acordo com os requisitos levantados. 
+- [Engenharia Reversa - 06/12/2023](./engenharia_reversa/): Trabalho para análise de um CSV e criação da engenharia reversa para criação de um modelo Entidade - Relacionamento.
 
 
 
