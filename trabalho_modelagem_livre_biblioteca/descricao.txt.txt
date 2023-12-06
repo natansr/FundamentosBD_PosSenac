@@ -1,0 +1,47 @@
+Aluno: Natan de Souza Rodrigues
+
+
+Esse modelo de entidade-relacionamento (MER) representa a estrutura de dados de um sistema de gerenciamento de biblioteca, permitindo o acompanhamento de informações sobre autores, editoras, livros, bibliotecários, clientes e empréstimos. 
+
+Essa é a estrutura do modelo de BD: 
+
+Entidades:
+
+Livro:
+
+	Atributos: ISBN (chave primária), título, ano de publicação, número de cópias disponíveis, gênero.
+
+Autor:
+
+	Atributos: ID (chave primária), nome, data de nascimento, país de origem.
+
+Editora:
+
+	Atributos: ID (chave primária), nome, endereço, telefone.
+
+Bibliotecário:
+
+	Atributos: ID (chave primária), nome, sobrenome, data de contratação, número de telefone.
+
+Empréstimo:
+
+	Atributos: ID (chave primária), data de empréstimo, data de devolução prevista, livro emprestado (chave estrangeira referenciando Livro), bibliotecário responsável (chave estrangeira referenciando Bibliotecário), pessoa que pegou emprestado (nome do cliente).
+
+
+Relacionamentos:
+
+
+Um Autor pode escrever vários Livros, mas um Livro é escrito por um único Autor. 
+	(Relação 1 para N entre Autor e Livro)
+
+Um Livro é publicado por uma Editora, mas uma Editora pode publicar vários Livros. 
+	(Relação 1 para N entre Editora e Livro)
+
+Um Bibliotecário pode fazer vários Empréstimos, mas um Empréstimo é realizado por um único Bibliotecário. 
+	(Relação 1 para N entre Bibliotecário e Empréstimo)
+
+Um Cliente pode realizar vários Empréstimos, mas um Empréstimo é feito por um único Cliente. 
+	(Relação 1 para N entre Cliente e Empréstimo)
+
+Um Livro pode ser emprestado em vários Empréstimos, mas um Empréstimo está relacionado a um único Livro.
+	(Relação N para 1 entre Livro e Empréstimo)
